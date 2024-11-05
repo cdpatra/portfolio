@@ -69,9 +69,9 @@ function InteractiveBackground() {
          x: undefined,
          y: undefined,
       };
-      const maxRadius = 40;
+      const maxRadius = 50;
       const interactivityRadius = 100;
-      const noOfCircles = 400;
+      const noOfCircles = 250;
       const colorArray = [`#fcaf17bf`, `#3958a8bf`, `#f067a6bf`, `#ed1c24bf`];
       window.addEventListener(`mousemove`, (event) => {
          mouse.x = event.x;
@@ -88,7 +88,7 @@ function InteractiveBackground() {
       function init() {
          circleArray = [];
          for (let i = 0; i < noOfCircles; i++) {
-            const radius = Math.random() * 3 + 3;
+            const radius = Math.random() * 10 + 5;
             let x = Math.floor(Math.random() * (window.innerWidth - 2 * radius) + radius);
             let y = Math.floor(Math.random() * (window.innerHeight - 2 * radius) + radius);
             let dx = Math.floor(Math.random() - 0.5) || 1;
@@ -110,7 +110,7 @@ function InteractiveBackground() {
    }, []);
 
    return (
-      <canvas className="overflow-hidden block w-full bg-[rgb(25,31,36)]" ref={canvasRef}>
+      <canvas className="overflow-hidden block w-full bg-primary-light dark:bg-primary-dark" ref={canvasRef}>
          <p>Please update your browser or enable JavaScript</p>
       </canvas>
    );

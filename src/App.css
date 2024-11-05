@@ -1,0 +1,25 @@
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+   width: 12px;
+}
+::-webkit-scrollbar-track {
+   background: rgb(45, 43, 43);
+}
+::-webkit-scrollbar-thumb {
+   background-image: linear-gradient(to bottom, #3958a8 10%, #fcaf17 40%, #ed1c24 75%, #f067a6 100%);
+   border-radius: 1rem;
+   margin-inline: 10px;
+   border: 3.5px solid transparent;
+   background-clip: content-box;
+   transition: opacity 2s ease;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+   background-image: linear-gradient(to bottom, #3958a8 8%, #fcaf17 30%, #ed1c24 80%, #f067a6 100%);
+   border: 3px solid transparent;
+}
+/* scroll behavior */
+html {
+   scroll-behavior: smooth;
+}
