@@ -33,8 +33,8 @@ export default function NavBar() {
    ];
    return (
       <>
-         <div className="wrapper fixed top-0 w-full z-50 flex-col justify-items-center justify-center">
-            <nav className=" h-16 w-5/6 mt-4 px-4 overflow-hidden  md:px-20 lg:px-28 rounded-full bg-neutral-300/80 dark:bg-white/15 backdrop-blur-lg flex items-center gap-12 justify-between">
+         <div className=" wrapper fixed top-0 h-fit w-full z-50 flex-col items-center justify-center">
+            <nav className=" h-16 w-5/6 mt-4 mx-auto  px-4 overflow-hidden  md:px-20 lg:px-28 rounded-full bg-neutral-300/80 dark:bg-white/15 backdrop-blur-lg flex items-center gap-12 justify-between">
                <a className="block h-4/6" href="#">
                   <img className="h-full" src={Logo} alt="Logo" />
                </a>

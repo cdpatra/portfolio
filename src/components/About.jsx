@@ -14,7 +14,7 @@ import springBoot from "../assets/images/technologies/spring-boot.png";
 import git from "../assets/images/technologies/git.png";
 
 export default function About() {
-   const people = [
+   const technologies = [
       {
          id: 1,
          name: "C",
@@ -116,7 +116,7 @@ export default function About() {
                   </p>
                </div>
                <div className="3d-elements lg:basis-2/3 flex flex-row flex-wrap items-center justify-center border dark:bg-secondary-dark border-slate-700/[0.2] dark:border-white/[0.2] rounded-lg py-14 px-4 gap-8">
-                  <AnimatedTooltip items={people} />
+                  <AnimatedTooltip items={technologies} />
                </div>
             </div>
          </div>
