@@ -4,7 +4,7 @@ import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 export function ThreeDCard({ project }) {
    return (
       <CardContainer className="inter-var">
-         <CardBody className=" flex flex-col justify-between  bg-secondary-light relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-[#272f36] dark:border-white/[0.2] border-black/[0.1] w-auto max-w-[25rem] sm:w-[25rem] h-[520px]  rounded-xl p-6 border">
+         <CardBody className=" flex flex-col justify-between  bg-secondary-light relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-[#272f36] dark:border-white/[0.2] border-black/[0.1] w-auto max-w-[25rem] sm:w-[25rem] h-auto sm:h-[520px]  rounded-xl p-6 border">
             <CardItem translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
                {project.title}
             </CardItem>
