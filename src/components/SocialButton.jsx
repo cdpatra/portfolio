@@ -35,7 +35,7 @@ export default function SocialButton() {
             onClick={clickHandler}>
             <motion.div
                animate={{
-                  y: [-5, +5, -5],
+                  y: [-2, +2, -2],
                   transition: { repeat: Infinity, duration: 1, ease: "circInOut" },
                }}
                whileTap={{ rotateZ: 45 }}>

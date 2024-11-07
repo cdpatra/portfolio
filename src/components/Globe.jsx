@@ -408,7 +408,7 @@ export function Globe() {
                }}
                className="div"></motion.div>
             <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-secondary-light z-40" />
-            <div className="absolute w-full -bottom-20 md:-bottom-80 h-72 md:h-full z-10">
+            <div className="absolute w-full left-0 -bottom-20 md:-bottom-80 h-72 md:h-full z-10">
                <World data={sampleArcs} globeConfig={globeConfig} />
             </div>
          </div>

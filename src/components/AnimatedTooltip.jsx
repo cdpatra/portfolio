@@ -46,7 +46,7 @@ export const AnimatedTooltip = ({ items }) => {
                            rotate: rotate,
                            whiteSpace: "nowrap",
                         }}
-                        className="absolute -top-11 min-w-28 bg-slate-700 dark:bg-black flex text-xs flex-col items-center justify-center rounded-md z-50 shadow-xl px-4 py-2">
+                        className="absolute -top-11 min-w-28 bg-slate-700 dark:bg-black flex text-xs flex-col items-center justify-center rounded-md z-30 shadow-xl px-4 py-2">
                         <div
                            className="absolute inset-x-10 z-30 w-[30%] -bottom-px h-[2px]"
                            style={{

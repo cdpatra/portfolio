@@ -71,7 +71,7 @@ function InteractiveBackground() {
       };
       const maxRadius = 50;
       const interactivityRadius = 100;
-      const noOfCircles = 200;
+      let noOfCircles = 200;
       const colorArray = [`#fcaf17bf`, `#3958a8bf`, `#f067a6bf`, `#ed1c24bf`];
       window.addEventListener(`mousemove`, (event) => {
          mouse.x = event.x;
@@ -81,7 +81,12 @@ function InteractiveBackground() {
       window.addEventListener(`resize`, () => {
          canvas.height = window.innerHeight;
          canvas.width = window.innerWidth;
-
+         if (canvas.width < 640) {
+            noOfCircles = 100;
+         } else {
+            noOfCircles = 200;
+         }
+         console.log(noOfCircles);
          init();
       });
       let circleArray = [];
