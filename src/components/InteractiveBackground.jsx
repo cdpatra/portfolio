@@ -71,7 +71,7 @@ function InteractiveBackground() {
       };
       const maxRadius = 50;
       const interactivityRadius = 100;
-      let noOfCircles = 200;
+      let noOfCircles = innerWidth >= 640 ? 200 : 100;
       const colorArray = [`#fcaf17bf`, `#3958a8bf`, `#f067a6bf`, `#ed1c24bf`];
       window.addEventListener(`mousemove`, (event) => {
          mouse.x = event.x;
