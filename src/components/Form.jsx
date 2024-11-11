@@ -8,7 +8,7 @@ export default function Form() {
          data-netlify-honeypot="bot-field"
          className="max-w-2xl w-full z-20 relative backdrop-blur-sm bg-slate-700/15 dark:bg-white/5 rounded-lg p-10">
          {/* Netlify configuration for form submission */}
-         <input type="hidden" name="Portfolio-contact-form" value="Portfolio-contact-form" />
+         <input type="hidden" name="form-name" value="Portfolio-contact-form" />
          <div hidden>
             <input name="bot-field" />
          </div>
