@@ -1,7 +1,7 @@
 export default function Form() {
    return (
       <form
-         method="POST"
+         method="post"
          name="Portfolio-contact-form"
          data-netlify="true"
          onSubmit="submit"
