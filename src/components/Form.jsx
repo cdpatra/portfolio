@@ -3,7 +3,6 @@ export default function Form() {
       <form
          className="max-w-2xl w-full z-20 relative backdrop-blur-sm bg-slate-700/15 dark:bg-white/5 rounded-lg p-10"
          name="Portfolio-contact-form"
-         // eslint-disable-next-line react/no-unknown-property
          netlify>
          <div className="mb-5">
             <label htmlFor="your-name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
