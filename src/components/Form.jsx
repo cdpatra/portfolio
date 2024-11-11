@@ -1,10 +1,18 @@
 export default function Form() {
    return (
       <form
-         className="max-w-2xl w-full z-20 relative backdrop-blur-sm bg-slate-700/15 dark:bg-white/5 rounded-lg p-10"
-         method="post"
-         name="Portfolio-contact-form">
+         method="POST"
+         name="Portfolio-contact-form"
+         data-netlify="true"
+         onSubmit="submit"
+         data-netlify-honeypot="bot-field"
+         className="max-w-2xl w-full z-20 relative backdrop-blur-sm bg-slate-700/15 dark:bg-white/5 rounded-lg p-10">
+         {/* Netlify configuration for form submission */}
          <input type="hidden" name="Portfolio-contact-form" value="Portfolio-contact-form" />
+         <div hidden>
+            <input name="bot-field" />
+         </div>
+         {/* Netlify configuration end's here */}
          <div className="mb-5">
             <label htmlFor="your-name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                Your name
