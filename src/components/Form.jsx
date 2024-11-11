@@ -2,6 +2,7 @@ export default function Form() {
    return (
       <form
          className="max-w-2xl w-full z-20 relative backdrop-blur-sm bg-slate-700/15 dark:bg-white/5 rounded-lg p-10"
+         method="post"
          name="Portfolio-contact-form">
          <input type="hidden" name="Portfolio-contact-form" value="Portfolio-contact-form" />
          <div className="mb-5">
