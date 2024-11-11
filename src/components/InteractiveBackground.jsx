@@ -86,7 +86,6 @@ function InteractiveBackground() {
          } else {
             noOfCircles = 200;
          }
-         console.log(noOfCircles);
          init();
       });
       let circleArray = [];
